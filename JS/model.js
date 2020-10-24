@@ -1,0 +1,5 @@
+const model = {}
+
+model.currentUser = {
+    
+}

@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: latha;
+    color: white;
+    background: 
+        linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+        url("./img/foodd.jpg")no-repeat  ;  
+    background-size: cover;
+}

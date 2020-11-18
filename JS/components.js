@@ -2,106 +2,187 @@ const components = {};
 
 components.home = `
 <style>
-
-.box{
-    width: 900px;
-    float: right;
-}
-.box ul li{
-    width: 120px;
-    float: left;
-    margin: 10px auto;
-    text-align: center;
+  .box {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    background-color: rgba(255, 99, 71, 0.96);
+    align-items: center;
+    justify-content: center;
+  }
+  .box ul {
     list-style: none;
-    background: rgba(0,0,0,0.9);
-    height: 40px
-}
-.box ul li a{
-    font-size: 17px;
-    text-decoration: none;
-    color: darkgray;
-}
-
-.box ul li a:hover{
-    color: white;
-}
-.wd{
-    width: 500px;
-    height: 740px;
-    background-color: black;
-    opacity: 0.9;
-    padding: 55px;
-}
-.wd p{
-  text-align: center;
-  font-style: italic;
-}
-.wd h1{
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 100px;
-}
-.wd h2{
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: normal;
-    padding: 5px;
-    margin: 5px auto;
-    font-style: italic;
-}
-.opt form, input[type="button"]{
-    background-color: black;
-    color: white;
+    display: flex;
+    flex-direction: row;
+  }
+  .box ul li {
+    display: flex;
     padding: 10px;
-    margin: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
+  }
+  .box ul li a {
+    text-decoration: none;
+    color: snow;
+    width: 100px;
+    height: 20px;
+  }
+  .box ul li a:hover {
+    color: whitesmoke;
+    cursor: pointer;
+  }
+
+  .wd {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 400px;
+    height: 94.5vh;
+    padding: 13px;
+    color: white;
+  }
+  .wd .header {
+    display: flex;
+    padding-top: 5px;
+    justify-content: center;
+  }
+  .wd .header p {
+    font-size: 25px;
+    font-style: italic;
+  }
+  .wd .description {
+    display: flex;
+    justify-content: center;
+  }
+  .wd .description p {
+    font-size: 15px;
+  }
+  .intro-pic{
+    display:flex;
+    border-radius: 10px;
+    padding-top: 10px;
+    width: 300px;
+    align-self: center;
+  }
+  intro-pic:hover{
+    opacity: 0.55;
+  }
+  .opt {
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+    height: 70px;
+  }
+  .opt input[type="button"] {
+    margin-top: 10px;
+    width: 200px;
+    height: 50px;
+    border-radius: 3px;
+    border: none;
+    font-size: 15px;
+    background: tomato;
+    color: white;
+  }
+  .opt input[type="button"]:hover{
+    background: turquoise;
+  }
+  .wrapper{
+    padding-top: 10px;
+  }
+  .wrapper span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icons-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fa {
+    display:flex;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 3px;
+    width: 50px;
+    height:50px;
     text-align: center;
-}
-form, input[type="button"]:hover{
-    background-color: green;
-}
+    justify-content: center;
+    align-items:center;
+    text-decoration: none;
+    margin: 20px 10px;
 
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+    
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
 </style>
-<section id = "home">
-<div class="box">
+<section id="home">
+  <div class="box">
     <ul>
-        <li><a href = "">Home</a></li>
-        <li><a href = "">Menu</a></li>
-        <li><a href = "">Contact</a></li>
-        <li ><a href = "" id = "sign-out">Sign Out</a></li>
+      <li><a href="">Home</a></li>
+      <li><a href="">Menu</a></li>
+      <li><a href="">Contact</a></li>
+      <li><a href="" id="sign-out">Sign Out</a></li>
     </ul>
-</div>
+  </div>
 
-<div class = "wd">
-    <h1>My Restaurant.com</h1><br>
+  <div class="wd">
+    <div class="header"><p>My Restaurant.com</p></div>
+    <br />
 
-    <p> 
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-    Vero laborum sequi quos ratione iusto beatae nesciunt tempora, 
-    nulla velit atque, debitis aspernatur vel voluptates, eum facilis odio animi. 
-    Eum, cum?
-    </p>
-
-    <br>
-    <h2>Reservation</h2>
-    <div class = "opt">
-        <form method = "post">
-            <input id = "start" type = "button" value = "Start Now">
-        </form>
+    <div class="description">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nulla
+        iusto perspiciatis voluptas eveniet dolorem sunt. Minima dolor veniam
+        odit illo voluptates, quos expedita qui doloribus modi? Dolores,
+        architecto laborum.
+      </p>
+    </div>
+    <img class = "intro-pic" src = "./img/home-pic.jpg"/>
+    <br />
+    <div class="header"><h2>Book Now</h2></div>
+    <div class="opt">
+      <form method="post">
+        <input id="start" type="button" value="Start Now" />
+      </form>
     </div>
     <div>
-        <hr>
-        <br>
-        <style> span{display: flex; justify-content: center; align-items: center;} </style>
+      <hr />
+      <div class="wrapper">
         <span> Location: West Lake View </span>
         <span> Open everyday: 7:00pm - 11:00pm </span>
         <span> Started since 24-10-2020.</span>
         <span> Build by Team L-N-Q</span>
+      </div>
     </div>
-    <div>
+    <div class = "icons-wrapper">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-pinterest"></a>
     </div>
-</div>
+    
+  </div>
 </section>
 
 `;
@@ -145,7 +226,7 @@ components.chooseLogin = `
     border: none;
     border-bottom: 1px solid #ffffff;
     height: 45px;
-    background-color: chocolate;
+    background-color: tomato;
     font-size: 17px;
     color: #ffffff;
     display: 16px;

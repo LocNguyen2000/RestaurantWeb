@@ -31,5 +31,5 @@ controller.login = function (loginInfo) {
     view.setError("Wrong account. Try again.")
 };
 controller.initApp = function () {
-  view.showComponents("home");
+  view.showComponents("staffPage");
 };

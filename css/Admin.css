@@ -1,0 +1,16 @@
+.nav-column{
+    display: flex;
+    height: 100vh;
+    background-color: tomato;
+    width: 40vh;
+    color: white;
+    padding-top: 12px;
+    justify-content: center;
+}
+.list-bar{
+    list-style: none;
+}
+.list-bar li{
+    padding: 5px;
+    font-size: 16px;
+}
